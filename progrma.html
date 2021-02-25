@@ -1,0 +1,83 @@
+<meta charset="utf-8">
+<script >
+	// O que eu quero saber ? A média das idades.
+	var idadeMarcelo=230;
+	var IdadeValeria=15;
+	var Idadejunior=37;
+	var mediadasidades=(idadeMarcelo+IdadeValeria+Idadejunior)/3;
+	document.write("<strong> A média das idades é : </strong>");
+	document.write((idadeMarcelo+IdadeValeria+Idadejunior)/3+"<br>");
+	alert("A media das idades é : " +  Math.round (mediadasidades));
+
+	
+	//------------------------------------------------------------------------------------
+	// O que eu quero saber? Seu ano de nascimento.
+    var nome=prompt("Qual o seu nome?");
+	var anoAtual=parseInt(prompt("Qual o ano atual?"));
+	var idadeAtual=parseInt(prompt("Qual a sua Idade? "));
+	var datanascimento=anoAtual-idadeAtual;
+	
+	alert(nome+ ",Sua data de nascimento é :" + datanascimento);
+	
+	 
+   //alert("qual o ano Atual?"+ anoAtual);ERRO
+   //alert("Qual a sua idade?"+idadeAtual);ERRO
+  //ERRO:Repete as mesma perguntas e resposta, ou seja, faz tudo outra vez.
+
+
+	alert("O que eu quero saber? A sua idade");
+    
+    nome=prompt("Qual o seu nome?");
+    anoAtual==parseInt(prompt("Qual o ano atual?"));
+    dataNascimento=parseInt(prompt("Em que ano vc nasceu?"));
+    idadeAtual=anoAtual-dataNascimento;
+
+    alert( nome+ "a sua idade é : " + idadeAtual);
+//-----------------------------------------------------------------------------------
+
+    document.write(" O que eu quero saber? A média dos valores gastos em suas útimas  viagens. "+"<br>");
+    var viagem1=3555;
+    var viagem2=2500;
+    var vaigaem3=3000;
+    var viagem4=5000;
+    var mediadasviagens=(viagem1+viagem2+vaigaem3+viagem4)/4;
+    document.write("A média do valor das suas últimas quatro viagens foram: "+ mediadasviagens+ " reais <br><br>");
+//---------------------------------------------------------------------------------------
+document.write("<strong> O que eu quero saber? Porcentagens de Acertos</strong> <br>");
+document.write("<br>");
+
+nome=prompt("Qual o seu nome?");
+var totalQuestoes=(parseInt(prompt("Quantas questões tinham a prova? ")));
+var acertou=parseInt(prompt("Quantas questões vc acertou?"));
+var porcentagemdeacertos=(acertou/totalQuestoes)*100;
+
+alert(nome +",você acertou " + porcentagemdeacertos + "% da prova");
+
+//---------------------------------------------------------------------------------------
+ document.write("<strong> O que eu quero fazer? Imprimir a tabuada do 5 </strong> <br>")
+ 
+ var multiplicador=5;
+ var variante=1;
+ var contador=0;
+ 
+
+ while(contador <10){
+ 	var resultado=5*(contador+1);
+    document.write(' 5 vezes  ' +(contador+1)+ "   =  "+ (resultado));
+ 	document.write("<br>");
+ 	contador++;
+ }
+
+
+document.write("<br><strong> O que eu quero saber? A média das idades. </strong><br>");
+var idadeLinda=12;
+var idadeGuaraciara=15;
+var idadePerola=13
+var mediaIdades= (idadeLinda+idadeGuaraciara+idadePerola)/3;
+document.write(" A idade das filhas do hacker é : " + Math.round(mediaIdades));
+
+//--------------------------------------------------------------------------------------
+
+
+
+</script>
