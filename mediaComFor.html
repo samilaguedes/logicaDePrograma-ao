@@ -1,0 +1,67 @@
+<meta charset="utf-8">
+<script>
+
+// contador=Armazenador.Registra e Armazena;
+// O que eu quero saber ou fazer ? A média de gastos com eventos
+  var totalDeEventos=parseInt(prompt("Digite a quantidade de eventos que vc faz por mês"));
+  totalDeGastos=0
+  
+  var i=1;
+  while (i<=totalDeEventos){
+  var gastoPorEvento= parseFloat(prompt("Digite o valor gasto no seu último evento "));
+  totalDeGastos= totalDeGastos + gastoPorEvento;
+  i++
+}
+ var media= Math.round (totalDeGastos/totalDeEventos);
+ alert(" A média dos gastos nos últimos "+totalDeEventos+" eventos foram $ "+ media +" reais.");
+//---------------------------------------------------------------------------------------------
+// O que eu quero saber ou fazer ? a média das idades dos meus familiares.
+ 
+ var somaDasIdades=0;
+ var totalFamiliares=parseInt(prompt("Digite o total de familiares"))
+  
+  for(var i=1;i<=totalFamiliares;i++){
+ 	
+ 	var idade= parseInt(prompt("Digite a sua idade"))
+ 	var somaDasIdades=somaDasIdades+idade;
+ 	
+ }
+
+ var media=somaDasIdades/totalFamiliares;
+ alert("A média da idades dos familiares é : " + Math.round (media));
+
+//---------------------------------------------------------------------------------------
+ // o que eu quero saber ou fazer? Da 3 chances para a pessoa advinhar um número
+
+ function sorteia(numero){
+  return Math.round (Math.random()*numero);
+
+}
+
+  
+ 
+ var i=0
+ var totalDechutes=3
+ while(i<=totalDechutes){
+  var chuteJogador=parseInt(prompt("qual número vc vai chutar"));
+  var numeroPensadoPeloComputador= sorteia(chuteJogador);
+   if (chuteJogador==numeroPensadoPeloComputador){
+    alert("Parabéns você Acertou!");
+    
+   } else{
+      
+      if (chuteJogador< numeroPensadoPeloComputador){
+      alert(" O número que vc chutou era menor que o número sorteado"); 
+      }
+      if(chuteJogador>numeroPensadoPeloComputador){
+        alert("O número que vc chutou era maior que o número pensado");
+      } 
+    } 
+   i++
+  } 
+
+
+
+	
+
+</script>

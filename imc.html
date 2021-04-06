@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<script>
+function calculaImc (altura,peso){
+		
+		return  peso/(altura*altura);
+		
+
+		//alert( nome+ "seu imc é :" + imc);
+	}
+
+var nome=prompt("Qual o seu nome?");
+var imcCalculado=calculaImc(parseFloat(prompt("Qual a sua altura?")),parseInt(prompt("Qual o seu peso?")));
+ alert(nome +" seu imc é : " + Math.round (imcCalculado));
+ 
+ if (imcCalculado<=18.5 ){
+ 		alert( " Seu imc é : " +imcCalculado+ " e vc esta com imc abaixo do limite recomendado pela OMS");
+ }
+ 
+ if(imcCalculado>=18.5 && imcCalculado<=35 ){
+ 
+ 		alert( nome + " parabéns, seu imc é :" + Math.round (imcCalculado) +" e   esta dentro do limite recomentado pela OMS");
+ }
+
+ if(imcCalculado >35){
+   		alert( nome + " seu imc é : "+ Math.round(imcCalculado)+" e está acima do limite recomendado pela OMS");
+ }	
+
+</script>

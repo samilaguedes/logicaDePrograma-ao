@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+<script>
+
+    var segredos = [5,7,10,2,3];
+
+    var input = document.querySelector("input");
+        input.focus();
+
+    function verifica() {
+
+    var achou = false;
+
+    for(var posicao = 0; posicao < segredos.length; posicao++) {
+
+        if(input.value == segredos[posicao]) {
+
+            alert("Você ACERTOU!");
+            achou = true;
+            break;
+        }
+    }
+
+    if(achou == false) {
+        alert("Você ERROU!");
+    }
+
+    input.value = "";
+    input.focus();
+
+    }
+
+    var button = document.querySelector("button");
+
+    button.onclick = verifica;
+     //alert(segredos.length);
+
+
+//-------------------------------------------------------------------------------
+// length= serve para dizer quantos valores tem no arreio automaticamente,insto é o tamanho da arreio. Lembrando que a contagem começa sempre od zero.ex: coisas.length o resultado será 2
+
+//Arreio[]=  serve para guardae uma lista de valores.Ele permite que uma única variável possua vários valores.Todo array é declarado com colchetes, o famoso []. Contudo se tivermos uma declaração desta forma var coisas = []; temos um array, ou seja, uma lista vazia sem qualquer elemento.Podemos, no momento da declaração de um array, adicionar elementos. Esses elementos podem ser de qualquer tipo conhecido do JavaScript:var coisas = ["Gisele", 12, true];
+//Quando queremos acessar um elemento específico do array, precisamos passar seu índice, ou seja, sua posição na lista. Contudo, precisamos estar muito atentos porque os índices do array começam de 0 até o tamanho do array menos um.
+
+</script>
+

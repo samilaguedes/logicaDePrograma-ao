@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+
+<script>
+// Oq que eu quero saber ? O total de pontos do time.
+var nome=prompt("Qual o seu nome?");	
+var time=prompt("Qual o seu time?");
+var vitorias=parseInt(prompt("Qual o número de vitórias do seu time?"));
+var empate=parseInt(prompt("Qual o número de empates do seu time ?"));
+var pontos= vitorias*3 + empate;
+alert( nome + " o total de pontos do " + time + " é : " + pontos);
+var pontosAnoPassado=parseInt(prompt(nome+ ",  qual o total de pontos do seu time Ano passado?"));
+
+if(pontos < pontosAnoPassado){
+	alert(nome+", seu time foi pior esse ano que ano passado.");
+}	
+	 if(pontos > pontosAnoPassado){
+	 	alert(nome + ", seu time foi melhor esse ano que ano passado.");
+	 }
+	
+	  if(pontos==pontosAnoPassado){
+	  	alert(nome+ ", os pontos do seu time esse ano foram igual ao ano passado")
+	  }
+
+
+
+</script>

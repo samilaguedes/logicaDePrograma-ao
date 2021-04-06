@@ -1,0 +1,41 @@
+<meta charset="utf-8">
+
+
+<input/>
+<button>Compare com meu segredo </button>
+
+<script>
+	var segredo=Math.round(Math.random()*10);
+	
+	var input= document.querySelector("input");
+	input.focus();
+	input.value //serve para capturar o valor do input
+
+	function verifica(){
+		
+		if(input.value==segredo){
+			
+			alert("Parabéns vc acertou!")
+	     } else {
+			alert("Você errou!!")
+	     }
+
+         input.value=""; //vai limpar o campo do imput depois de fazer a operação;
+         input.focus();
+	}
+	 
+	 var button= document.querySelector("button");
+	 button.onclick=verifica;// ao não se colocar os parentenses para chamar a função significa que os camandos da função ira para dentro do onclick e ao clicar no botão ele vai chamar as instrução da função verifica. é como se ao não colocarmos os parenteses do lado de verifica ela fosse guardada dentro do onclick e fosse executada quando clicado nele.
+	
+	
+
+
+
+
+
+
+
+
+</script>
+
+// Arreio[]=  serve para guardae uma lista de valores

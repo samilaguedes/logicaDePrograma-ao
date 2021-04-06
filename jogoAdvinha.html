@@ -1,0 +1,117 @@
+<meta charset="utf-8">
+<script>
+	function mostra(frase){
+		document.write(frase);
+		document.write("<br><br>");
+    } 
+
+    //var numeroPensadoPeloComputador= Math.round (Math.random()*10);
+    //var chute=parseInt(prompt("Qual o numero que vc vai chutar?"));
+
+   //if(chute==numeroPensado){
+   	//mostra("Você acertou!");
+   //}else{
+   //	mostra("Desculpe, mas vc não acertou");
+   //}
+
+ //----------------------------------------------------------------------------------
+ 
+ // O que eu quero saber ou fazer?
+
+function sorteia(numero){
+	return Math.round (Math.random()*numero);
+
+}
+ var chuteJogador=parseInt(prompt("qual número vc vai chutar")); 
+ var numeroPensadoPeloComputador= sorteia(chuteJogador);
+
+  if (chuteJogador==numeroPensadoPeloComputador){
+  	alert("Parabéns você Acertou!");
+  	
+  } else{
+  		
+  		if (chuteJogador< numeroPensadoPeloComputador){
+  		alert(" O número que vc chutou era menor que o número sorteado"); 
+  		}
+  		if(chuteJogador>numeroPensadoPeloComputador){
+  			alert("O número que vc chutou era maior que o número pensado");
+  		} 
+  	}	
+
+  	alert(numeroPensadoPeloComputador);
+
+
+
+
+//-----------------------------------------------------------------------
+// o que eu quero saber ou fazer? Se a quantidade de carbono são iguais 
+var substancia1= parseInt(prompt("Qual a quantidade de carbono dessa substância 1?"));
+var substancia2= parseInt(prompt("Qual a quantidade de carbono dessa substância 2 "));
+var somaSubstancia2= substancia2+2;
+
+if (substancia1==somaSubstancia2){
+	alert (" A quantidade de carbono das duas subtâncias é igual ");
+}else{
+	alert("As substâncias não são iguais ")
+}
+
+//-----------------------------------------------------------------------
+
+// O que eu quero saber ou fazer ? Se a pessoa pode ou não dirigir;
+var idade= parseInt(prompt("Qual a sua idade?"));
+var carteira= prompt("Você tem Carteira de Habilitação.Responda S ou N");
+
+if (idade >= 18 && carteira == "S") {
+	alert("Parabéns você pode Dirigir");
+}else{
+	alert("Você não pode dirigir. ");
+}
+
+//----------------------------------------------------------------
+// o que eu quero saber ou fazer? Da 3 chances para a pessoa advinhar o número
+
+ function sorteia(numero){
+  return Math.round (Math.random()*numero);
+
+}
+
+  
+ 
+ var i=1
+ var totalDechutes=3
+ while(i<=totalDechutes){
+  
+  var chuteJogador=parseInt(prompt("Digite seu Chute"));
+  var numeroPensadoPeloComputador= sorteia(chuteJogador);
+   
+   if (chuteJogador==numeroPensadoPeloComputador){
+    alert("Parabéns você Acertou!");
+    break;
+    
+   } else{
+    alert("Tente mais uma vez")
+      
+      //if (chuteJogador< numeroPensadoPeloComputador){
+     // alert(" O número que vc chutou era menor que o número sorteado"); 
+     // }
+     // if(chuteJogador>numeroPensadoPeloComputador){
+      //  alert("O número que vc chutou era maior que o número pensado");
+      //} 
+    } 
+  i++
+  }
+
+
+  
+
+    alert("O numero sorteado era : " + numeroPensadoPeloComputador);
+
+    //--------------------------------------------------------------------------------
+    
+
+
+	
+
+
+
+</script>
